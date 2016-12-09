@@ -1,0 +1,24 @@
+{
+  "name": "hyper-news",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "zeit/hyper",
+  "license": "MIT",
+  "author": {
+    "name": "Zeit, Inc.",
+    "email": "team@zeit.co"
+  },
+  "bugs": {
+    "url": "https://github.com/zeit/hyper-news/issues"
+  },
+  "homepage": "https://github.com/zeit/hyper-news#readme",
+  "dependencies": {
+    "micro": "latest",
+    "semver": "5.3.0"
+  }
+}

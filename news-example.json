@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "text": "macOS",
+      "url": "https://zeit.co",
+      "dismissable": false,
+      "versions": [
+        "< 1.1.0"
+      ],
+      "platforms": [
+        "darwin"
+      ]
+    },
+    {
+      "text": "linux",
+      "url": "https://zeit.co",
+      "dismissable": false,
+      "versions": [
+        "< 1.1.0"
+      ],
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
+      "text": "windows",
+      "url": "https://zeit.co",
+      "dismissable": false,
+      "versions": [
+        "< 1.1.0"
+      ],
+      "platforms": [
+        "win32"
+      ]
+    },
+    {
+      "text": "any platform",
+      "url": "https://zeit.co",
+      "dismissable": false,
+      "versions": [
+        "< 1.1.0"
+      ],
+      "platforms": [
+        "*"
+      ]
+    }
+  ]
+}

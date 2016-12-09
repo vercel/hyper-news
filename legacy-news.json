@@ -1,0 +1,12 @@
+{
+  "messages": [
+    {
+      "text": "HyperTerm is now Hyper.app :O Please re-download!",
+      "url": "https://zeit.co/blog/the-hyper-plan",
+      "dismissable": false,
+      "versions": [
+        "<= 0.8.0"
+      ]
+    }
+  ]
+}
