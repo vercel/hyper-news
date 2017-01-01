@@ -1,4 +1,5 @@
 const {join: joinPath} = require('path')
+const {parse: parseUrl} = require('url')
 const {readFileSync} = require('fs')
 
 const {satisfies} = require('semver')
@@ -17,6 +18,11 @@ const matchPlatform = (platforms, clientPlatform) => (
 module.exports = async function (req) {
   const platform = req.headers['x-hyper-platform']
   const version = req.headers['x-hyper-version']
+  const {pathname} = parseUrl(req.url)
+
+  if (pathname === '/current') {
+    return news.messages
+  }
 
   if (platform === undefined || version === undefined) {
     return legacyNews
