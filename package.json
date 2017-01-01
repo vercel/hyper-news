@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "repository": "zeit/hyper",
   "license": "MIT",
@@ -20,5 +20,12 @@
   "dependencies": {
     "micro": "latest",
     "semver": "5.3.0"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
   }
 }

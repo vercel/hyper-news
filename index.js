@@ -14,7 +14,7 @@ const matchPlatform = (platforms, clientPlatform) => (
   platforms.some(p => p === '*' || p === clientPlatform)
 )
 
-module.exports = async function (req, res) {
+module.exports = async function (req) {
   const platform = req.headers['x-hyper-platform']
   const version = req.headers['x-hyper-version']
 
