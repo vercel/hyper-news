@@ -36,7 +36,7 @@ const matchPlatform = (platforms, clientPlatform) => (
 )
 
 fetchLatestRelease()
-setInterval(() => fetchLatestRelease(), ms('30m'))
+setInterval(() => fetchLatestRelease(), ms('2m'))
 
 module.exports = async function (req) {
   const platform = req.headers['x-hyper-platform']
