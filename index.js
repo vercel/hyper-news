@@ -25,6 +25,7 @@ function fetchLatestRelease() {
         platforms: ['linux']
       }
     })
+    .catch(console.log)
 }
 
 const matchVersion = (versions, clientVesion) => (
