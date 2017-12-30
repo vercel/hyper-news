@@ -1,3 +1,4 @@
+const trackStatusCodes = require("@zeit/metrics/http-status")("hyper-news");
 const {join: joinPath} = require('path')
 const {parse: parseUrl} = require('url')
 const {readFileSync} = require('fs')
@@ -39,7 +40,7 @@ const matchPlatform = (platforms, clientPlatform) => (
 fetchLatestRelease()
 setInterval(() => fetchLatestRelease(), ms('2m'))
 
-module.exports = async function (req) {
+module.exports = trackStatusCodes(async function (req) {
   const platform = req.headers['x-hyper-platform']
   const version = req.headers['x-hyper-version']
   const {pathname} = parseUrl(req.url)
@@ -66,4 +67,4 @@ module.exports = async function (req) {
   )) || ''
 
   return {message}
-}
+})
