@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zeit/hyper-news#readme",
   "dependencies": {
+    "@zeit/metrics": "^1.0.23",
     "got": "6.7.1",
     "micro": "latest",
     "ms": "0.7.2",
