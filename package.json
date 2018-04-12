@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
+    "start": "NODE_ENV=production micro",
     "test": "xo"
   },
   "repository": "zeit/hyper",
