@@ -21,12 +21,12 @@ const news = JSON.parse(readFileSync(joinPath(__dirname, '../news.json'), 'utf-8
 const legacyNews = JSON.parse(readFileSync(joinPath(__dirname, '../legacy-news.json'), 'utf-8'))
 
 // Match versions (strings) from two sources
-const matchVersion = (versions: Array<String>, clientVersion) => (
+const matchVersion = (versions: Array<String>, clientVersion: string | string[]) => (
   versions.some(v => v === '*' || satisfies(clientVersion, v))
 )
 
 // Match platform (strings) from two sources
-const matchPlatform = (platforms: Array<String>, clientPlatform) => (
+const matchPlatform = (platforms: Array<String>, clientPlatform: string | string[]) => (
   platforms.some(p => p === '*' || p === clientPlatform)
 )
 
