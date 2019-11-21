@@ -3,7 +3,9 @@
     { "handle": "filesystem" },
     { "src": "/", "dest": "/api" }
   ],
-  "env": {
-    "NPM_TOKEN": "@npm-token"
+  "build": {
+    "env": {
+      "NPM_TOKEN": "@npm-token"
+    }
   }
 }
