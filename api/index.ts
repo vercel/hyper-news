@@ -42,9 +42,6 @@ export default trackStatusCodes((req: NowRequest, res: NowResponse) => {
     return
   }
 
-  // Set caching headers
-  res.setHeader('Cache-Control', 's-maxage=5 stale-while-revalidate=5')
-
   // Set message, if there are any found
   const message = news.messages.find((msg: Messages) => (
     matchVersion(msg.versions, version) && matchPlatform(msg.platforms, platform)
