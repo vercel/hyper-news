@@ -2,15 +2,15 @@
   "name": "hyper-news",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "/api/index.js",
   "scripts": {
-    "start": "NODE_ENV=production micro",
+    "start": "now dev",
     "test": "xo"
   },
-  "repository": "zeit/hyper",
+  "repository": "zeit/hyper-news",
   "license": "MIT",
   "author": {
-    "name": "Zeit, Inc.",
+    "name": "ZEIT",
     "email": "team@zeit.co"
   },
   "bugs": {
@@ -18,14 +18,12 @@
   },
   "homepage": "https://github.com/zeit/hyper-news#readme",
   "dependencies": {
-    "@zeit/metrics": "1.2.7",
-    "got": "6.7.1",
-    "micro": "latest",
-    "ms": "0.7.2",
+    "@zeit/metrics": "2.0.5",
     "semver": "5.3.0"
   },
   "devDependencies": {
-    "xo": "0.17.1"
+    "@now/node": "^1.1.2",
+    "xo": "^0.25.3"
   },
   "xo": {
     "space": true,

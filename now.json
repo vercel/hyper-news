@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/api" }
+  ],
+  "build": {
+    "env": {
+      "NPM_TOKEN": "@npm-token"
+    }
+  }
+}
